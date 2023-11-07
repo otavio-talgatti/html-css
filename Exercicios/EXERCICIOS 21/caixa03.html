@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bordas Personalizadas</title>
+    <style>
+        h1{
+            border: 9px solid black;
+            padding: 10px;
+            border-image-source: url('bordas/borda.png');
+            border-image-slice: 26;
+            border-image-repeat: repeat;
+
+            /*Da para fazer short hand na ordem do border
+            border: url('borda.png') 26 repeat;*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando bordas Personalizadas</h1>
+</body>
+</html>
