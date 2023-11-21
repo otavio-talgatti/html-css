@@ -19,9 +19,21 @@
             padding: 10px;
         }
 
+        caption {
+            font-size: 1,5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+
         thead, tfoot {
             background-color: gray;
             color: white;
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-color: lightgrey;
         }
 
         td.num {
@@ -31,12 +43,12 @@
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
-
     <table>
+        <caption>População dos Estados Federativos</caption>
         <thead>
             <tr>
-                <td>Estado</td>
-                <td>População</td>
+                <th cope="col">Estado</th>
+                <th cope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
 
@@ -80,7 +92,7 @@
         </tbody>
             
         <tfoot>
-            <th>Total de Habitantes</th>
+            <th scope="row">Total de Habitantes</th>
             <td class="num"><strong>149,329,960</strong></td>
         </tfoot>
     </table>
